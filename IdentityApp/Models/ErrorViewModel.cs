@@ -1,6 +1,6 @@
 using System;
 
-namespace Identity.Models
+namespace IdentityApp.Models
 {
     public class ErrorViewModel
     {
