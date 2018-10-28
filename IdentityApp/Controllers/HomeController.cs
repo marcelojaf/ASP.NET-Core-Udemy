@@ -5,11 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using IdentityApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IdentityApp.Controllers
 {
+    
     public class HomeController : Controller
     {
+        [Authorize(Policy = "SomenteGestores")]
         public IActionResult Index()
         {
             return View();
