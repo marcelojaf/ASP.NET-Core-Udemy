@@ -4,9 +4,8 @@ using System.Text;
 
 namespace AppVendas.Domain.Produto
 {
-    public class Categoria
+    public class Categoria : BaseEntity
     {
-        public int Id { get; private set; }
         public string Nome { get; private set; }
 
         public Categoria(string nome)
